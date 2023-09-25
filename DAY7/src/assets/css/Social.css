@@ -1,0 +1,29 @@
+.social-btn-container {
+  position: fixed;
+  bottom: 10px; /* Adjust the distance from the bottom as needed */
+  left: 10px; /* Adjust the distance from the left as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  width: auto; /* Let the width adjust to content */
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.social-btn:hover {
+  transform: translateX(10px); /* Move each button to the right on hover */
+}
+
+.social {
+  /* No need to change the positioning of .social */
+  position: fixed;
+  top: 200px;
+}
+
+/* ... (other styles remain the same) */
