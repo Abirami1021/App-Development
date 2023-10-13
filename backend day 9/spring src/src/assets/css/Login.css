@@ -1,0 +1,181 @@
+body
+{
+    overflow: hidden;
+    
+}
+.container{
+    
+    height: 120vh;
+    background: linear-gradient(to top, rgba(187, 110, 187, 0.56), rgba(89, 5, 89, 0.999)  100%);
+    overflow: hidden;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  
+  .container1 {
+    top:-110px;
+  width: 450px;
+  position: relative;
+  border-radius: 2029px;
+  overflow: hidden;
+  background-color:rgb(33, 9, 32);
+  opacity: 90%;
+  box-shadow: 1.5px 1.5px 3px #d3c1d2, -1.5px -1.5px 3px rgba(255, 254, 255, 0.951), inset 0px 0px 0px #fffdff, inset 0px -0px 0px #ad90a2;
+  }
+  
+  .container .slider {
+  width: 200%;
+  position: relative;
+  transition: transform ease-out 0.3s;
+  display: flex;
+  }
+  
+  #register_toggle {
+  display: none;
+  }
+  
+  .container #register_toggle:checked + .slider {
+  transform: translateX(-50%);
+  }
+  
+  .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 1.5em 3em;
+  width: 50%;
+  }
+  
+  .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  color:#f00ded;
+  padding-bottom: 10px;
+  font-family: 'Maven Pro',sans-serif;
+  }
+  
+  form .form_control {
+  width: 100%;
+  position: relative;
+  overflow:hidden;
+  }
+  
+  form .form_control .label {
+  position: absolute;
+  top: 50%;
+  transition: transform ease 0.2s;
+  transform: translate(0%, -50%);
+  font-size: 0.75em;
+  user-select: none;
+  pointer-events: none;
+  color:#874f7d7b;
+  }
+  form.form_control.input::placeholder{
+  color:#803f6ed1;
+  }
+  
+  form .form_control .input {
+  width: 90%;
+  height: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:#75606c;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: box-shadow ease 0.2s;
+  box-shadow: 0px 0px 0px #934a6eae, 0px 0px 0px  rgb(123, 102, 125), inset 1.5px 1.5px 3px #763656, inset -1.5px -1.5px 3px #763656 ;
+  }
+  
+  form .form_control .input:focus,
+  form .form_control .input:valid {
+  box-shadow: 0px 0px 0px #884265, 0px 0px 0px rgb(123, 102, 125), inset 3px 3px 4px #763656, inset -3px -3px 4px #763656;
+  }
+  
+  form .form_control .input:focus + .label,
+  form .form_control .input:valid + .label {
+  transform: translate(-150%, -50%);
+  }
+  .form .input::placeholder {
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+  }
+  form button {
+  width: 65%;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Maven Pro',sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #7c4a7c;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: box-shadow ease 0.1s;
+  box-shadow: 1.5px 1.5px 3px #874876ee, -1.5px -1.5px 3px rgba(253, 102, 213, 0.548), inset 0px 0px 0px #ae84af, inset 0px 0px 0px #7d6071d4;
+  }
+  
+  form button:active {
+  box-shadow: 0px 0px 0px #6e4278fb, 0px 0px 0px rgba(102, 193, 253, 0.25/ 25%), inset 3px 3px 4px #8a397e, inset -3px -3px 4px #9d467f;
+  }
+  
+  .bottom_text {
+  font-size: 0.85em;
+  color:#9b5e85;
+  
+  }
+  
+  .bottom_text .swtich {
+  font-weight: 700;
+  cursor: pointer;
+  }
+  .container1.active .form {
+    opacity: 1;
+    transform: translateY(56);
+  }
+  .form {
+    transition: transform 0.3s ease-in-out; /* Add a transition for smoother sliding */
+  }
+  
+  /* Add a class to activate the animation */
+  .container1.active .form {
+    transform: translateY(88); /* Slide the form up */
+    opacity: 1;
+  }
+  form .form_control .label {
+    transition: transform 0.9s ease; /* Add a smooth transform animation */
+  }
+  
+  form .form_control .input:focus + .label,
+  form .form_control .input:valid + .label {
+    transform: translate(-150%, -50%); /* Move the label up on focus */
+  }
+  form button {
+    transition: box-shadow 0.9s ease, background-color 0.9s ease; /* Add transitions for button animation */
+  }
+  
+  form button:active {
+    box-shadow: 10px 10px 10px #d98bebfb, 10px 10px 10px rgba(102, 193, 253, 0.25/ 25%), inset 30px 30px 40px #8a397e, inset -3px -3px 4px #9d467f;
+    background-color: #674359; /* Change button background on click */
+    color: #702c70; /* Change button text color on click */
+  }
+  
+  .bi{
+    background-image: url("https://www.homecare-aid.com/wp-content/uploads/Why-Elderly-Care-Can-Be-So-Important.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+  }
